@@ -1,0 +1,55 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+CC	Makefile	/^CC = gcc$/;"	m
+CFLAGS	Makefile	/^CFLAGS = -g -Wall$/;"	m
+OBJS	Makefile	/^OBJS = test$/;"	m
+SRC	Makefile	/^SRC = btree.c test.c linkqueue.c$/;"	m
+_BTREE_H_	btree.h	2;"	d
+_LINKQUEUE_H_	linkqueue.h	2;"	d
+_LINKSTACK_H_	linkstack.h	2;"	d
+btree_create	btree.c	/^btree_pnode btree_create(void)$/;"	f
+btree_node	btree.h	/^}btree_node, *btree_pnode;$/;"	t	typeref:struct:btreenode
+btree_pnode	btree.h	/^}btree_node, *btree_pnode;$/;"	t	typeref:struct:btreenode
+btreenode	btree.h	/^typedef struct btreenode {$/;"	s
+data	btree.h	/^    datatype_bt data;$/;"	m	struct:btreenode
+data	linkqueue.h	/^    datatype data;$/;"	m	struct:linkqueuenode
+data	linkstack.h	/^    datatype_ls data;$/;"	m	struct:node
+datatype	linkqueue.h	/^typedef btree_pnode datatype;$/;"	t
+datatype_bt	btree.h	/^typedef char datatype_bt;$/;"	t
+datatype_ls	linkstack.h	/^typedef btree_pnode datatype_ls;$/;"	t
+front	linkqueue.h	/^    linkqueue_pnode front, rear;$/;"	m	struct:__anon1
+init_linkqueue	linkqueue.c	/^link_pqueue init_linkqueue(void)$/;"	f
+is_empty_linkqueue	linkqueue.c	/^bool is_empty_linkqueue(link_pqueue q)$/;"	f
+lchild	btree.h	/^    struct btreenode *lchild, *rchild;$/;"	m	struct:btreenode	typeref:struct:btreenode::btreenode
+level_order	btree.c	/^void level_order(btree_pnode t)$/;"	f
+link_pqueue	linkqueue.h	/^}link_queue, *link_pqueue;$/;"	t	typeref:struct:__anon1
+link_queue	linkqueue.h	/^}link_queue, *link_pqueue;$/;"	t	typeref:struct:__anon1
+linklist	linkstack.h	/^}listnode, *linklist;$/;"	t	typeref:struct:node
+linkqueue_node	linkqueue.h	/^}linkqueue_node, *linkqueue_pnode;$/;"	t	typeref:struct:linkqueuenode
+linkqueue_pnode	linkqueue.h	/^}linkqueue_node, *linkqueue_pnode;$/;"	t	typeref:struct:linkqueuenode
+linkqueuenode	linkqueue.h	/^typedef struct linkqueuenode {$/;"	s
+linkstack_clear	linkstack.c	/^void linkstack_clear(linklist s)$/;"	f
+linkstack_create	linkstack.c	/^linklist linkstack_create()$/;"	f
+linkstack_empty	linkstack.c	/^int linkstack_empty(linklist s)$/;"	f
+linkstack_free	linkstack.c	/^void linkstack_free(linklist s)$/;"	f
+linkstack_pop	linkstack.c	/^datatype linkstack_pop(linklist s)$/;"	f
+linkstack_push	linkstack.c	/^int linkstack_push(linklist s, datatype value)$/;"	f
+linkstack_top	linkstack.c	/^datatype linkstack_top(linklist s)$/;"	f
+listnode	linkstack.h	/^}listnode, *linklist;$/;"	t	typeref:struct:node
+main	test.c	/^int main(void)$/;"	f
+mid_order	btree.c	/^void mid_order(btree_pnode t)$/;"	f
+next	linkqueue.h	/^    struct linkqueuenode *next;$/;"	m	struct:linkqueuenode	typeref:struct:linkqueuenode::linkqueuenode
+next	linkstack.h	/^    struct node * next;$/;"	m	struct:node	typeref:struct:node::node
+node	linkstack.h	/^typedef struct node {$/;"	s
+pop_linkqueue	linkqueue.c	/^bool pop_linkqueue(link_pqueue q, datatype *p)$/;"	f
+post_order	btree.c	/^void post_order(btree_pnode t)$/;"	f
+pre_order	btree.c	/^void pre_order(btree_pnode t)$/;"	f
+push_linkqueue	linkqueue.c	/^bool push_linkqueue(datatype data, link_pqueue q)$/;"	f
+rchild	btree.h	/^    struct btreenode *lchild, *rchild;$/;"	m	struct:btreenode	typeref:struct:btreenode::
+rear	linkqueue.h	/^    linkqueue_pnode front, rear;$/;"	m	struct:__anon1
+show_linkqueue	linkqueue.c	/^void show_linkqueue(link_pqueue q)$/;"	f
+unpre_order	btree.c	/^void unpre_order(btree_pnode t)$/;"	f
